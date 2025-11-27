@@ -1,0 +1,332 @@
+.custom-navbar {
+  background: linear-gradient(135deg, #0056b3 0%, #28a745 100%);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+.brand-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white !important;
+  transition: all 0.3s ease;
+}
+
+.brand-logo:hover {
+  color: #f8f9fa !important;
+  transform: scale(1.05);
+}
+
+.brand-text {
+  color: white;
+}
+
+.brand-accent {
+  color: #ffd700;
+  margin: 0 5px;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 500;
+  margin: 0 10px;
+  padding: 8px 16px !important;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.contact-btn {
+  border: 2px solid white;
+  color: white;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: white;
+  color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 4px 8px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='m4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Services Dropdown Styles */
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  z-index: 1001;
+}
+
+.dropdown-arrow {
+  font-size: 0.8rem;
+  transition: transform 0.2s ease-in-out;
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.nav-dropdown:hover .dropdown-arrow,
+.nav-dropdown.show .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/* Two-Column Services Menu */
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  width: 650px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+  z-index: 1000;
+  margin-top: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.nav-dropdown:hover .mega-menu,
+.nav-dropdown.show .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0;
+  pointer-events: auto;
+}
+
+.mega-menu-content {
+  display: flex;
+  min-height: 300px;
+}
+
+/* Left Column - Categories */
+.categories-column {
+  width: 200px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #e9ecef;
+  border-radius: 8px 0 0 8px;
+}
+
+.category-item:first-child .category-link {
+  color: #667eea;
+  background-color: white;
+  border-left-color: #667eea;
+}
+
+.category-item {
+  position: relative;
+}
+
+.category-link {
+  display: block;
+  padding: 1rem 1.2rem;
+  color: #495057;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+}
+
+.category-item:hover .category-link,
+.category-item.active .category-link {
+  color: #667eea;
+  background-color: white;
+  border-left-color: #667eea;
+}
+
+/* Right Column - Services */
+.services-column {
+  flex: 1;
+  padding: 1.2rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.services-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.2rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+}
+
+/* Active States */
+.services-list.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.services-title {
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 0 1.5rem;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 0.5rem;
+}
+
+.service-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.service-items li {
+  margin-bottom: 0;
+}
+
+.service-link {
+  color: #495057;
+  text-decoration: none;
+  padding: 0.6rem 1.5rem;
+  display: block;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  font-weight: 400;
+  border-left: 3px solid transparent;
+}
+
+.service-link:hover {
+  color: #667eea;
+  background-color: #f8f9fa;
+  text-decoration: none;
+  border-left-color: #667eea;
+}
+
+/* Mobile Responsive */
+@media (max-width: 991px) {
+  .navbar-nav .nav-link {
+    margin: 5px 0;
+    text-align: center;
+  }
+  
+  .contact-btn {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  /* Mobile Mega Menu */
+  .nav-dropdown {
+    width: 100%;
+  }
+
+  .mega-menu {
+    position: static;
+    width: 100%;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .mega-menu-content {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .categories-column {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e9ecef;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .services-column {
+    padding: 0;
+  }
+
+  .services-list {
+    position: static;
+    opacity: 1 !important;
+    visibility: visible !important;
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 1rem;
+  }
+
+  .services-list:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  .nav-dropdown:hover .mega-menu,
+  .nav-dropdown.show .mega-menu {
+    margin-top: 0.5rem;
+  }
+
+  /* Mobile Arrow Behavior */
+  .dropdown-toggle {
+    cursor: pointer;
+  }
+
+  /* Make dropdown work on mobile tap */
+  .nav-dropdown {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .nav-dropdown.show .mega-menu {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mega-menu {
+    width: 580px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mega-menu-content {
+    padding: 0.8rem 0;
+  }
+
+  .category-title {
+    font-size: 0.8rem;
+    padding: 0.4rem 1rem 0.2rem;
+  }
+
+  .service-link {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .service-items {
+    grid-template-columns: 1fr;
+  }
+}

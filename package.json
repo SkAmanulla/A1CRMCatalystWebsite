@@ -1,0 +1,21 @@
+{
+  "name": "a1crmanalyst",
+  "version": "1.0.0",
+  "description": "A1 CRM Analyst - Accelerating Your Customer Growth with Smart CRM Solutions",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev-mysql": "concurrently \"npm run server-mysql\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "server-mysql": "cd backend && npm run dev-mysql",
+    "client": "cd frontend && npm start",
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install"
+  },
+  "keywords": ["crm", "catalyst", "customer-growth", "salesforce", "react", "node", "mysql"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
+

@@ -1,0 +1,347 @@
+/* Industries Page Styles */
+
+.industries-page {
+  padding-top: 80px; /* Account for fixed navbar */
+}
+
+/* Hero Section */
+.industries-hero {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.industries-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.industries-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.industries-hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 1.1;
+}
+
+.industries-hero-description {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Industries Grid Section */
+.industries-grid {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.industry-card {
+  border: none;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+  background: white;
+  height: 100%;
+}
+
+.industry-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.industry-card-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.industry-card-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  display: block;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.industry-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.industry-card-description {
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.industry-links {
+  margin-bottom: 2rem;
+}
+
+.industry-links-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.industry-links-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+.industry-link {
+  display: block;
+  padding: 0.7rem 1rem;
+  background: #f8fafc;
+  border-radius: 8px;
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.industry-link:hover {
+  background: #e2e8f0;
+  color: #1f2937;
+  border-left-color: #3b82f6;
+  transform: translateX(5px);
+}
+
+.industry-card-footer {
+  text-align: center;
+}
+
+.view-all-btn {
+  border-radius: 25px;
+  padding: 0.7rem 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.view-all-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.2);
+}
+
+/* Stats Section */
+.industries-stats {
+  padding: 80px 0;
+  background: white;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #3b82f6;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #6b7280;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* CTA Section */
+.industries-cta {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.cta-description {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cta-primary-btn {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  color: #1e3a8a;
+  font-weight: 600;
+  padding: 0.8rem 2.5rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.cta-primary-btn:hover {
+  background: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+}
+
+.cta-secondary-btn {
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  color: white;
+  padding: 0.8rem 2.5rem;
+  border-radius: 30px;
+  background: transparent;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cta-secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .industries-hero {
+    padding: 80px 0;
+  }
+  
+  .industries-hero-title {
+    font-size: 2.8rem;
+  }
+  
+  .industries-grid {
+    padding: 80px 0;
+  }
+  
+  .industry-card {
+    margin-bottom: 2rem;
+  }
+  
+  .industry-links-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .industries-hero {
+    padding: 60px 0;
+  }
+  
+  .industries-hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .industries-hero-description {
+    font-size: 1.1rem;
+  }
+  
+  .industry-card-title {
+    font-size: 1.3rem;
+  }
+  
+  .industry-card-icon {
+    font-size: 3rem;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+  
+  .cta-title {
+    font-size: 2.2rem;
+  }
+  
+  .cta-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-primary-btn,
+  .cta-secondary-btn {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .industries-hero {
+    padding: 40px 0;
+  }
+  
+  .industries-hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .industries-hero-description {
+    font-size: 1rem;
+  }
+  
+  .industries-grid {
+    padding: 60px 0;
+  }
+  
+  .industry-card-title {
+    font-size: 1.2rem;
+  }
+  
+  .industry-card-description {
+    font-size: 0.95rem;
+  }
+  
+  .industry-links-title {
+    font-size: 0.9rem;
+  }
+  
+  .industry-link {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.85rem;
+  }
+  
+  .cta-title {
+    font-size: 1.8rem;
+  }
+  
+  .cta-description {
+    font-size: 1rem;
+  }
+}

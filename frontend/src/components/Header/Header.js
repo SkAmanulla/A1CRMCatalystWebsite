@@ -128,7 +128,7 @@ const Header = () => {
         <Navbar.Brand as={Link} to="/" className="brand-logo">
           <span className="brand-text">A1</span>
           <span className="brand-accent">CRM</span>
-          <span className="brand-text">Analyst</span>
+          <span className="brand-text">Catalyst</span>
         </Navbar.Brand>
         
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
